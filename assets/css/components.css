@@ -1,0 +1,143 @@
+/* UI components */
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #fff;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.card-media {
+  aspect-ratio: 1 / 1;
+  background: var(--bg-2);
+  overflow: hidden;
+}
+.card-media img { width: 100%; height: 100%; object-fit: cover; }
+.card-body {
+  padding: 10px;
+}
+.card-title {
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0 0 4px;
+}
+.card-subtitle {
+  color: var(--muted-text);
+  font-size: 12px;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-1);
+}
+.price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+.price .mrp {
+  color: var(--muted-text);
+  text-decoration: line-through;
+  font-size: 12px;
+}
+.price .offer {
+  color: var(--success);
+  font-weight: 600;
+  font-size: 12px;
+}
+.chip {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #fff;
+  font-size: 12px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 12px;
+}
+.toolbar .left,
+.toolbar .right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.toolbar select, .toolbar input[type="number"], .toolbar input[type="search"] {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+
+.hero {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-1);
+}
+.hero img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+.hero .caption {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  background: rgba(255,255,255,0.85);
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.sizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 12px;
+}
+.size-btn {
+  min-width: 40px;
+  text-align: center;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #fff;
+}
+.size-btn.active {
+  border-color: var(--text-color);
+  box-shadow: inset 0 0 0 2px var(--text-color);
+}
+
+.strip {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+.strip .tile {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #fff;
+}
+.strip .tile img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.strip .tile span {
+  display: block;
+  padding: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+

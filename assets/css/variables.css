@@ -1,0 +1,38 @@
+:root {
+  /* Core palette */
+  --brand-pink: #ff3f6c;
+  --brand-pink-700: #e83860;
+  --accent: var(--brand-pink);
+  --text-color: #111827; /* slate-900 */
+  --muted-text: #6b7280; /* gray-500 */
+  --bg: #ffffff;
+  --bg-2: #f8fafc;       /* slate-50 */
+  --border: #e5e7eb;     /* gray-200 */
+  --success: #10b981;    /* emerald-500 */
+  --warning: #f59e0b;    /* amber-500 */
+  --danger: #ef4444;     /* red-500 */
+
+  /* Layout tokens */
+  --container-width: 1240px;
+  --radius: 10px;
+  --radius-sm: 8px;
+  --radius-lg: 14px;
+  --shadow-1: 0 4px 16px rgba(17, 24, 39, 0.08);
+  --shadow-2: 0 8px 28px rgba(17, 24, 39, 0.12);
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+

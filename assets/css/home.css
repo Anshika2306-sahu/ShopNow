@@ -1,0 +1,45 @@
+.categories {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+.category-tile {
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #fff;
+}
+.category-tile img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+.category-tile span {
+  font-weight: 600;
+  padding: 8px 0 12px;
+}
+
+.banner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-1);
+}
+
+/* App-only offers banner: keep full image without crop */
+.banner.app-only img {
+  height: auto;
+  object-fit: contain;
+}
+
+.seo {
+  color: var(--muted-text);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+

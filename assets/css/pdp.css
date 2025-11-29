@@ -1,0 +1,37 @@
+.pdp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.pdp-media {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.pdp-media img {
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  object-fit: cover;
+  height: 340px;
+}
+.pdp-details h1 {
+  font-size: 20px;
+  margin: 0 0 6px;
+}
+.pdp-details .brand {
+  color: var(--muted-text);
+  font-size: 14px;
+  font-weight: 600;
+}
+.pdp-details .price { margin: 10px 0 14px; }
+.pdp-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+
+
+
+
+

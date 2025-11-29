@@ -1,0 +1,43 @@
+.plp {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 20px;
+}
+.filters {
+  position: sticky;
+  top: 92px;
+  align-self: start;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px;
+  background: #fff;
+}
+.filters h3 {
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+.filters .group {
+  border-top: 1px solid var(--border);
+  padding: 12px 0;
+}
+.filters .group:first-child {
+  border-top: 0;
+}
+.filters label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin: 6px 0;
+}
+.plp-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+
+
+
+
+
