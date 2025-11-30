@@ -35,6 +35,6 @@ Tech approach:
 ---
 
 ## 🚀 Deployment Link
-Live Project Link:  
+Live Project Link:  https://shop-now-eight-rouge.vercel.app/
 
 ---
